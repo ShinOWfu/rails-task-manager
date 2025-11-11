@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Add a Task</h1>
+  <%= simple_form_for @task do |t| %>
+    <%= t.input :title %>
+    <%= t.input :details %>
+    <%= t.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>
